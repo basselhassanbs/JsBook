@@ -1,0 +1,45 @@
+.preview-wrapper {
+  position: relative;
+  height: 100%;
+  flex-grow: 1;
+  z-index: 1;
+}
+
+.preview-wrapper .preview-error {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: red;
+}
+
+.preview-wrapper iframe {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+}
+
+.react-draggable-transparent-selection .preview-wrapper {
+  z-index: -1;
+  height: 100%;
+}
+
+/* another solution for drag over iframe */
+
+/* .preview-wrapper {
+  position: relative;
+  height: 100%;
+}
+
+.preview-wrapper iframe {
+  height: 100%;
+  background-color: #fff;
+}
+
+.react-draggable-transparent-selection .preview-wrapper:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+} */

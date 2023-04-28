@@ -1,0 +1,30 @@
+{
+  "name": "jsnotbook",
+  "version": "1.0.0",
+  "description": "",
+  "bin": "dist/index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "start": "tsc --watch --preserveWatchOutput",
+    "prepublishOnly": "esbuild src/index.ts --platform=node --outfile=dist/index.js --bundle --minify --define:process.env.NODE_ENV=\\\"production\\\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@jsnotbook/local-client": "^1.0.0"
+  },
+  "devDependencies": {
+    "@jsnotbook/local-api": "^1.0.0",
+    "@types/node": "^18.16.1",
+    "commander": "^10.0.1",
+    "esbuild": "0.8.26",
+    "typescript": "^5.0.4"
+  },
+  "gitHead": "65b95338b09f0bfc27b099e3cfeac697d30233a4"
+}
