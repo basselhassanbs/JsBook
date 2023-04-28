@@ -1,4 +1,4 @@
-# jsnbook
+# JsBook
 
 This is an interactive coding environment. You can write javascript, see it executed, and write comprehensive documentation using markdown.
 
