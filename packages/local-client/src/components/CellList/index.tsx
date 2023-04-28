@@ -17,7 +17,7 @@ const CellList: React.FC = () => {
 
   useEffect(() => {
     fetchCells();
-  }, []);
+  }, [fetchCells]);
 
   const renderedCells = cells.map((cell: Cell) => (
     <Fragment key={cell.id}>
